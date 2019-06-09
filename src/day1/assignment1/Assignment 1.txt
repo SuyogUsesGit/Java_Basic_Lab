@@ -1,0 +1,18 @@
+Ans a) Students and Faculty members are the two cases of hierarchy in the fiven problem statement.
+
+Ans b) Common behaviour for day-scholar, host-elite, graduate and post-graduate students are:
+	1) Apply for courses
+	2) Register for electives
+	3) View marks
+	4) View Attendance details
+
+Ans c) Different layers: 
+	1) Admin
+	2) Student
+	3) Lecturer
+	4) HOD
+
+Ans d) Details required by admin staff to generate student report:
+	1) Details regarding Graduate students and Post graduate students.
+	2) Details regarding elective and non-elective courses.
+	3) Details regarding project/thesis.

@@ -1,0 +1,10 @@
+Crossword solution
+1) state
+2) state
+3) Identity
+4) Encapsulation
+5) Object
+6) behaviour
+7) Inheritance
+8) Abstraction
+9) Polymorphism
