@@ -1,0 +1,25 @@
+Ans a) Student class attributes:
+	Note: Users who have access to the attributes are mentioned in the round brackets
+	1) Student id (Admin)
+	2) Name
+	3) Degree (Admin)
+	4) courses taken (HOD, Lecturer)
+	5) Attendance
+
+Ans b) There will be 2 methods to calculate grade for graduate and post-graduate students.
+	The method name can be the same but the method parameters need to be different because 
+	of following differences:
+	1) Total number of courses taken will be different for graduate and post-graduate students
+	   therefore, attendance, exams taken will also vary.
+	2) Final year project for graduates and the Thesis for post-graduates will be graded seperately
+
+Ans c) There will be 2 functions:
+	1) PaySemesterFees() will be used by all the students
+	2) PayHostelFees() will only be used by host-elites
+
+Ans d) OOP features for a,b,c:
+	1) Inheritance
+	2) Abstraction
+	3) Encapsulation
+	4) Polymorphism
+	
