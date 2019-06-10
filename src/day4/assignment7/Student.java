@@ -4,15 +4,11 @@ public class Student {
     protected int studentId;
     protected char studentType;
     protected String studentName;
-    protected int semesterFees;
+    protected int semesterFees = 12000;
     protected double feesPerMonth;
 
-    public Student(int studentId, char studentType, String studentName, int feesPerMonth) {
-        this.studentId = studentId;
-        this.studentType = studentType;
-        this.studentName = studentName;
-        this.semesterFees = 12000;
-        this.feesPerMonth = feesPerMonth;
+    public Student() {
+
     }
 
     public void setStudentId(int studentId) {
@@ -34,29 +30,33 @@ public class Student {
     public void displayDetails() {
 
     }
+
 }
 
-final class DayScholar extends Student {
-    private String residentialAddress;
+    final class DayScholar extends Student {
+        private String residentialAddress;
 
-    public DayScholar(int studentId, char studentType, String studentName, int feesPerMonth, String residentialAddress) {
-        super(studentId, studentType, studentName, feesPerMonth);
-        this.residentialAddress = residentialAddress;
-    }
+        public DayScholar(int studentId, char studentType, String studentName, int feesPerMonth, String residentialAddress) {
+            this.setStudentId(studentId);
+            this.setStudentName(studentName);
+            this.setStudentType(studentType);
+            this.feesPerMonth = feesPerMonth;
+            this.residentialAddress = residentialAddress;
+        }
 
-    public void displaySDetails() {
-        System.out.println("Student ID : " + this.studentName + "\n" +
-                            "Student Type : " + this.studentType + "\n" +
-                            "Student Name : " + this.studentName + "\n" +
-                            "Fees per month : " + this.feesPerMonth + "\n" +
-                            "Semester Fees : " + this.semesterFees + "\n" +
-                            "Residential Address : " + this.residentialAddress );
-    }
+        public void displaySDetails() {
+            System.out.println("Student ID : " + this.studentId + "\n" +
+                    "Student Type : " + this.studentType + "\n" +
+                    "Student Name : " + this.studentName + "\n" +
+                    "Fees per month : " + this.feesPerMonth + "\n" +
+                    "Semester Fees : " + this.semesterFees + "\n" +
+                    "Residential Address : " + this.residentialAddress);
+        }
 
-    public static void main(String[] args) {
-        DayScholar dayScholar = new DayScholar(1, 'Z', "Sanket", 12000,
-                                                "India");
-        dayScholar.calculateFees();
-        dayScholar.displaySDetails();
+        public static void main(String[] args) {
+            DayScholar dayScholar = new DayScholar(1, 'Z', "Sanket", 12000,
+                    "India");
+            dayScholar.calculateFees();
+            dayScholar.displaySDetails();
+        }
     }
-}

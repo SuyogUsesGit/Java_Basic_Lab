@@ -1,0 +1,12 @@
+Ans 1) Yes Inheritance is definitely a better approach to the problem as the differentiating factor between 2 common classes is the fares
+	class structure: 
+	Business Flights and Economy Flights extends Flight class
+	First class train and Second class train extends Train class
+	Non-AC and AC Bus extends Bus class.
+
+Ans 2) Yes Inheritance can still be used because there are many attributes common in all of the classes such as:
+	a) Each tour charges certain amount
+	b) Each tour will have a certain amount of people
+	c) Each tour will have a Calculate Charges method
+	class structure:
+	All 3 classes will extend from a base Travel class.
