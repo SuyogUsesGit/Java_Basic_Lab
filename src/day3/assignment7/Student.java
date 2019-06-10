@@ -49,7 +49,7 @@ public class Student {
                             "Name : " + student.getStudentName() + "\n" +
                             "ID : " + student.getStudentId() + "\n" +
                             "Residential Status : " + student.getResidentialStatus() + "\n" +
-                            "Semester Fees : " + student.getFeesPerMonth() + "$" + "\n");
+                            "Semester Fees : " + student.getFeesPerMonth() + "$");
 
         if(student.getResidentialStatus().equals("Hostelite")) System.out.println("Hostel fees : 100$");
 
